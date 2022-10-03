@@ -12,10 +12,13 @@ class Car(object):
 
 class Parking(object):
     def __init__(self):
+        self.x = 0
+        self.y = 0
         self.get_variables()
         self.output_string = ""
         self.red_car = Car(count=self.x, icon="R")
         self.white_car = Car(count=self.y, icon='W')
+
 
     def get_variables(self):
         try:
